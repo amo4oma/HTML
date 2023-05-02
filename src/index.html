@@ -1,0 +1,147 @@
+    @@include("partials/main.html")
+
+    <head>
+
+        @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+        <!-- jsvectormap css -->
+        <link href="assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
+
+        <!--Swiper slider css-->
+        <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+            
+            @@include("partials/menu.html")
+            @@include("partials/sidebar.html")
+            
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+     
+                <div class="page-content main-background-image">
+                    <div class="container-fluid">
+                        <div class="w-100 d-flex justify-content-between"> 
+                            <h5 class="p-4"><strong>Referral Forms</strong></h5>
+                            <a href="./create-new.html" class="btn create-new-btn btn-primary d-flex align-items-center justify-content-around"> Create New <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+            <div class="row" bis_skin_checked="1">
+                <div class="col-xxl-4" bis_skin_checked="1">
+                   
+                    <div class="card d-card" bis_skin_checked="1">
+                        <div class="" bis_skin_checked="1">
+                            <div class="d-flex flex-column " bis_skin_checked="1">
+                                <div class="d-flex justify-content-around" bis_skin_checked="1">
+                                    <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-lg rounded-circle">
+                                    <div class="ms-3 me-4 ms-4" bis_skin_checked="1">
+                                        <p class="card-text"><span class="fw-medium">Willie Fisher</span>
+                                           </p>
+                                           <span class="pending">Pending</span>
+                                       
+                                    </div>
+                                </div>
+                             
+                                <div class="tags-container" bis_skin_checked="1">
+                                   <a href="#"> <i class="fa-solid fa-pen" style="color:#189ED4; font-size: 11px; border:#189ED4 1px solid; border-radius: 5px; padding: 5px;"></i></a> 
+                                   <a href="#"><i class="fa-solid fa-trash"  style="color:#98A1A6; font-size: 11px; border:#98A1A6 1px solid; border-radius: 5px; padding: 5px;"></i></a> 
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-xxl-4" bis_skin_checked="1">
+                   
+                    <div class="card d-card" bis_skin_checked="1">
+                        <div class="" bis_skin_checked="1">
+                            <div class="d-flex flex-column " bis_skin_checked="1">
+                                <div class="d-flex justify-content-around" bis_skin_checked="1">
+                                    <img src="assets/images/users/avatar-1.jpg" alt="" class="avatar-lg rounded-circle">
+                                    <div class="ms-3 me-4 ms-4" bis_skin_checked="1">
+                                        <p class="card-text"><span class="fw-medium">Nina Gilman</span>
+                                           </p>
+                                           <div class="d-flex flex-column align-items-center rejected-tag-container">
+                                            <span class="pending rejected">Rejected</span>
+                                           <span class="pending note">View Note</span>
+                                        </div>
+                                           
+                                       
+                                    </div>
+                                </div>
+                             
+                                <div class="tags-container" bis_skin_checked="1">
+                                   <a href="#"><i class="fa-solid fa-pen" style="color:#189ED4;font-size: 11px; border:#189ED4 1px solid; border-radius: 5px; padding: 5px;"></i></a> 
+                                   <a href="#">  <i class="fa-solid fa-trash"  style="color:#98A1A6;font-size: 11px; border:#98A1A6 1px solid; border-radius: 5px; padding: 5px;"></i></a>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-xxl-4" bis_skin_checked="1">
+                   
+                    <div class="card d-card" bis_skin_checked="1">
+                        <div class="" bis_skin_checked="1">
+                            <div class="d-flex flex-column " bis_skin_checked="1">
+                                <div class="d-flex justify-content-around" bis_skin_checked="1">
+                                    <img src="assets/images/users/avatar-2.jpg" alt="" class="avatar-lg rounded-circle">
+                                    <div class="ms-3 me-4 ms-4" bis_skin_checked="1">
+                                        <p class="card-text"><span class="fw-medium">Sara Mo</span>
+                                           </p>
+                                           <span class="pending approved">Approved</span>
+                                       
+                                    </div>
+                                </div>
+                             
+                                <div class="tags-container" bis_skin_checked="1">
+                                   <a href="#"> <i class="fa-solid fa-pen" style="color:#189ED4; font-size: 11px; border:#189ED4 1px solid; border-radius: 5px; padding: 5px;"></i></a> 
+                                   <a href="#"> <i class="fa-solid fa-trash"  style="color:#98A1A6; font-size: 11px; border:#98A1A6 1px solid; border-radius: 5px; padding: 5px;"></i></a> 
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+    
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+
+
+ 
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- apexcharts -->
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+        <!-- Vector map-->
+        <script src="assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+        <script src="assets/libs/jsvectormap/maps/world-merc.js"></script>
+
+        <!--Swiper slider js-->
+        <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Dashboard init -->
+        <script src="assets/js/pages/dashboard-ecommerce.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+        <script>
+  
+        </script>
+    </body>
+
+</html>

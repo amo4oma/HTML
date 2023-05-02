@@ -1,0 +1,119 @@
+@@include("partials/main.html")
+
+    <head>
+
+        @@include("partials/title-meta.html", {"title": "Sign In"})
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    <body>
+
+
+        <section class="auth-page-wrapper py-5 position-relative d-flex align-items-center justify-content-center min-vh-100 bg-light">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-12 ">
+                        <div class="card">
+                            <div class="card-body main-login-card">
+                                <div class="row g-0 ">
+                                    <div class="col-lg-5">
+                                        <div class="card mb-0 border-0 shadow-none">
+
+                                          
+                                            <div class="card-body px-0 p-sm-5 m-lg-4">
+                                                <img src="./assets/images/logo-ascind.png" alt="logo" class="" height="90" />
+                                                <div class="mt-3">
+                                             
+                                                    <p class="text-muted"><strong>Sign up to Dashboard</strong></p>
+                                                </div>
+                                                <div class=" mt-2">
+                                                    <form action="index.html">
+                                                
+                                                        <div class="mb-3">
+                                                
+                                                            <input type="text" class="form-control " id="name" placeholder="Your Name">
+                                                        </div>
+                                                
+                                                        <div class="mb-3">
+                                                
+                                                            <input type="email" class="form-control " id="email" placeholder="Email">
+                                                        </div>
+                                                
+                                                        <div class="mb-3">
+                                                       
+                                                        
+                                                            <div class="position-relative auth-pass-inputgroup mb-3">
+                                                                <input type="password" class="form-control pe-5 password-input" placeholder="Password" id="password-input">
+                                                                <input type="password" class="form-control pe-5 password-input mt-4" placeholder="Confirm Password" id="password-input">
+
+                                                                <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
+                                                            </div>
+                                                        </div>
+                                                
+                                                        <!-- <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="auth-remember-check">
+                                                            <label class="form-check-label" for="auth-remember-check">Remember me</label>
+                                                        </div> -->
+                                                
+                                                        <div class="mt-4">
+                                                            <button class="btn btn-primary w-100" type="submit">Log In</button>
+                                                        </div>
+                                                
+                                                        <!-- <div class="mt-4 pt-2 text-center">
+                                                            <div class="signin-other-title">
+                                                                <h5 class="fs-13 mb-4 title">Sign In with</h5>
+                                                            </div>
+                                                            <div class="pt-2 hstack gap-2 justify-content-center">
+                                                                <button type="button" class="btn btn-soft-primary btn-icon"><i class="ri-facebook-fill fs-16"></i></button>
+                                                                <button type="button" class="btn btn-soft-danger btn-icon"><i class="ri-google-fill fs-16"></i></button>
+                                                                <button type="button" class="btn btn-soft-dark btn-icon"><i class="ri-github-fill fs-16"></i></button>
+                                                                <button type="button" class="btn btn-soft-info btn-icon"><i class="ri-twitter-fill fs-16"></i></button>
+                                                            </div>
+                                                        </div> -->
+                                                    </form>
+                                                
+ 
+                                                </div>
+                                            </div><!-- end card body -->
+                                        </div><!-- end card -->
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-lg-7">
+                             <div class="card auth-card   h-100 border-0 shadow-none p-sm-3 overflow-hidden mb-0">
+                                            <div class="card-body p-4 d-flex align-items-center justify-content-center">
+                                                <div class="  mb-3">
+                                                  
+                                                    <img src="assets/images/big-logo.png" alt="" class="big-logo" />
+                                                    <img class="login-v-image" src="assets/images/v.png" alt="v image">
+                                                <div class="logo-text text-center"> 
+                                                   <h3>Transforming Healthcare</h3>
+                                                    <p>Through the patient’s eyes</p></div>
+                                                
+                                               </div>
+        
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                </div>
+                                <!--end row-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+                </div>
+                <!--end row-->
+            </div>
+            <!--end container-->
+        </section>
+        
+        @@include("partials/vendor-scripts.html")
+
+        <script src="assets/js/pages/password-addon.init.js"></script>
+
+    </body>
+
+</html>

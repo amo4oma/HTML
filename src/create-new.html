@@ -1,0 +1,187 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "create-new"})
+
+    <!-- jsvectormap css -->
+    <link href="assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Swiper slider css-->
+    <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+
+    @@include("partials/head-css.html")
+  
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        
+        @@include("partials/menu.html")
+        @@include("partials/sidebar.html")
+        
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content ">
+ 
+            <div class="page-content main-background-image">
+                <div class="container-fluid">
+                    <div class="w-100 d-flex justify-content-between"> 
+                        <h5 class="p-4"><span class="inactive">Referral Forms</span> <i class="pl-5 fa fa-long-arrow-right" aria-hidden="true"></i> Create New</strong></h5>
+                    </div>
+
+        <div class="row" bis_skin_checked="1">
+            <div class="col-xxl-2" bis_skin_checked="1">
+               <div class="profile-image-out-container d-flex align-items-center">
+                <div class="profile-image-container d-flex justify-content-center align-items-center">
+                    <img class="profile-image" src="assets/images/upload-icon.png" alt="">
+                    <div class="edit-btn-container d-flex justify-content-center align-items-center">
+                        <i style="color: #fff;" class="fa-regular fa-pen-to-square"></i>
+                    </div>
+                   </div>
+               </div>
+           
+            </div><!-- end col -->
+            <div class="col-xxl-3" bis_skin_checked="1">
+                <form action="index.html">
+                                                
+                    <div class="mb-3">
+            
+                        <input type="text" class="form-control " id="name" placeholder="Full name">
+                    </div>
+            
+                    <div class="mb-3">
+            
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>Martial Status <i class=" bx bx-caret-down"></i></option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+            
+                    <div class="mb-3">
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>country<i class=" bx bx-caret-down"></i></option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+    
+                    </div>
+            
+           
+                </form>
+            
+            </div><!-- end col -->
+            <div class="col-xxl-3" bis_skin_checked="1">
+                <form action="index.html">
+                                                
+                    <div class="mb-3">
+            
+                        <input type="text" class="form-control " id="name" placeholder="Your Name">
+                    </div>
+            
+                    <div class="mb-3">
+            
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>Nationally <i class=" bx bx-caret-down"></i></option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+            
+                    <div class="mb-3">
+                   
+                        <input type="number" class="form-control " id="name" placeholder="Weight (KG)">
+                    
+                 
+                    </div>
+            
+             
+                 
+            
+          
+                </form>
+              
+            </div><!-- end col -->
+            <div class="col-xxl-3" bis_skin_checked="1">
+                <form action="index.html">
+                                                
+                    <div class="mb-3">
+            
+                        <input type="text" class="form-control " id="name" placeholder="Your Name">
+                    </div>
+            
+                    <div class="mb-3">
+            
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>Gender <i class=" bx bx-caret-down"></i></option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+            
+                    <div class="mb-3">
+                   
+                        <input type="number" class="form-control " id="name" placeholder="Mobile">
+                    
+                    </div>
+             
+                </form>
+              
+            </div><!-- end col -->
+            <div class="col-xxl-9 offset-xxl-2" bis_skin_checked="1">
+                <div class="mb-3">
+            
+                    <textarea type="text" class="form-control " id="text" placeholder="Description"></textarea>
+                </div>
+            </div>
+            <div class="col-xxl-5 offset-xxl-6" bis_skin_checked="1">
+                <div class="mt-5 mb-5 float-end">
+            
+                   <button class="cancel-btn">Cancel <i class="pl-5 fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                   <button class="send-btn">Send <i class="pl-5 fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+ 
+
+    @@include("partials/vendor-scripts.html")
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Vector map-->
+    <script src="assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="assets/libs/jsvectormap/maps/world-merc.js"></script>
+
+    <!--Swiper slider js-->
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Dashboard init -->
+    <script src="assets/js/pages/dashboard-ecommerce.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
